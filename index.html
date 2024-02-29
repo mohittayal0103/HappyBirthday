@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="style.css" />
+    </head> 
+    <body>
+        <h1> Happy Birthday Fatte !</h1>
+
+        <div class="gallery-wrap">
+            <img src="images/back.png" id="backBtn" />
+        <div class="gallery">
+            <div>
+                <span><img src="images/1.jpg"/></span>
+                <span><img src="images/2.JPG"/></span>
+                <span><img src="images/3.JPG"/></span>
+            </div>
+            <div>
+                <span><img src="images/4.JPG"/></span>
+                <span><img src="images/5.JPG"/></span>
+                <span><img src="images/6.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/7.jpg"/></span>
+                <span><img src="images/8.JPG"/></span>
+                <span><img src="images/8.1.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/8.2.PNG"/></span>
+                <span><img src="images/9.JPG"/></span>
+                <span><img src="images/9.1.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/9.2.PNG"/></span>
+                <span><img src="images/10.jpg"/></span>
+                <span><img src="images/11.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/12.jpg"/></span>
+                <span><img src="images/13.jpg"/></span>
+                <span><img src="images/14.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/15.1.jpg"/></span>
+                <span><img src="images/15.jpg"/></span>
+                <span><img src="images/16.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/17.jpg"/></span>
+                <span><img src="images/18.jpg"/></span>
+                <span><img src="images/19.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/20.PNG"/></span>
+                <span><img src="images/21.JPG"/></span>
+                <span><img src="images/22.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/23.jpg"/></span>
+                <span><img src="images/24.jpg"/></span>
+                <span><img src="images/25.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/26.jpeg"/></span>
+                <span><img src="images/27.png"/></span>
+                <span><img src="images/28.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/29.jpg"/></span>
+                <span><img src="images/30.jpg"/></span>
+                <span><img src="images/40.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/41.jpg"/></span>
+                <span><img src="images/42.jpg"/></span>
+                <span><img src="images/43.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/44.jpg"/></span>
+                <span><img src="images/45.jpg"/></span>
+                <span><img src="images/46.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/47.jpg"/></span>
+                <span><img src="images/48.jpg"/></span>
+                <span><img src="images/49.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/50.jpg"/></span>
+                <span><img src="images/51.jpg"/></span>
+                <span><img src="images/52.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/53.jpg"/></span>
+                <span><img src="images/54.jpg"/></span>
+                <span><img src="images/55.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/56.jpg"/></span>
+                <span><img src="images/57.jpg"/></span>
+                <span><img src="images/58.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/59.jpg"/></span>
+                <span><img src="images/60.jpg"/></span>
+                <span><img src="images/61.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/62.jpg"/></span>
+                <span><img src="images/66.jpg"/></span>
+                <span><img src="images/67.jpg"/></span>                
+            </div>
+            <div>
+                <span><img src="images/68.jpg"/></span>
+                <span><img src="images/69.jpg"/></span>
+                <span><img src="images/70.jpg"/></span>
+            </div>
+            <div>
+                <span><img src="images/71.jpg"/></span>
+                <span><img src="images/73.jpg"/></span>
+            </div>            
+        </div>
+        <img src="images/next.png" id="nextBtn" />
+        </div>
+
+        <script>
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backBtn");
+            let nextBtn = document.getElementById("nextBtn");
+
+            scrollContainer.addEventListener("Wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
+
+            nextBtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 800;
+            });
+
+            backBtn.addEventListener("click", ()=>{
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 800;
+            })
+        </script>
+    </body>
+</html>
